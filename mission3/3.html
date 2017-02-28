@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务3:三栏式布局</title>
+</head>
+
+<style>
+	body {
+		padding: 0;
+	}
+
+	.container {
+		padding: 20px;
+		background-color: #eee;
+		border: 1px solid #999;
+		height: auto;
+	}
+
+	.team-name {	
+		width: 200px;
+		border: 1px solid #999;
+		float: left;
+	}	
+
+	.content {	
+		padding: 20px;
+		border: 1px solid #999;
+		margin-left: 220px;
+		margin-right: 140px;
+	}
+
+	.self-info {
+		width: 120px;
+		border: 1px solid #999;
+		float: right;
+	}
+
+	.teamate {
+		width: 80px;
+		height: 80px;
+		border: 1px solid #999;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.team-logo {
+		width: 80px;
+		height: 80px;
+		border: 1px solid #999;
+		margin: 20px 20px 20px 20px;
+		display: inline-block;		
+	}
+
+	#team-name {
+		position: relative;
+		top: -89px;
+	}
+
+	.clear {
+		clear: both;
+	}
+</style>
+
+<body>
+	<div class="container">
+		<div class="team-name">
+			<div class="team-logo"></div>
+			<span id="team-name">团队名称</span>
+		</div><!-- team-name end -->
+
+		<div class="self-info">
+			<div class="teamate"></div>
+			<div class="teamate"></div>
+			<div class="teamate"></div>
+			<div class="teamate"></div>
+		</div><!-- self-info end-->
+
+		<div class="content">
+			团队介绍
+		</div><!-- content end -->
+
+		<div class="clear">
+			
+		</div>
+	</div>
+</body>
+</html>
